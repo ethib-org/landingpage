@@ -1,0 +1,10 @@
+---
+import { Image } from "astro:assets";
+
+const {title, url } = Astro.props;
+---
+
+<div class="mb-12 flex flex-col items-center text-09494C text-2xl">
+<Image src={url} alt='icon' width="26" height="29" />
+<h2>{title}</h2>
+</div>
