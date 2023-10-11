@@ -5,24 +5,24 @@ import { Image } from "astro:assets";
 import TitleSection from "./TitleSection.astro";
 
 ---
-<section class="rounded-t-3xl mt-8 z-10">
-   <div class="mb-14 mx-3 sm:mx-0 w-330 sm:w-auto flex flex-col items-center relative">
+<section class="rounded-t-3xl pt-8 pb-14 z-20 bg-white -mt-5">
+   <div class=" mx-3 sm:mx-0 w-330 sm:w-auto flex flex-col items-center">
     <TitleSection title="Le point de départ" url="/images/asset-section.png" />
-    <div class="flex mb-7 w-full justify-evenly">
+    <div class="flex mb-7 w-full justify-between">
         <div>
             <h3 class="mb-1.5 text-09494C text-lg">Une industrie polluante</h3>
             <p class="text-sm">L’industrie du textile est la <br />seconde industrie la plus<br /> polluante au monde.</p>
         </div>
         <Image src="/images/asset-section2.png" alt="Asset section" height="91" width="90" />
     </div>
-    <div class="flex mb-14 w-full justify-evenly">
+    <div class="flex mb-14 w-full justify-between">
         <Image src="/images/asset-section3.png" alt="Asset section" height="91" width="90" />
         <div>
             <h3 class="mb-1.5 text-09494C text-lg">Boutiques engagées mais<br /> invisibles</h3>
             <p class="text-sm">Les boutiques responsables et<br /> éthiques manquent de visibilité.</p>
         </div>
     </div>
-    <div class="mb-20">
+    <div class="">
         <a href="#" class="l inline-flex px-6 py-3 justify-center items-center gap-5 rounded-[20px] bg-[#E25959] text-white hover:bg-[#C94343] hover:text-white">
             Suivre notre projet
         </a>
