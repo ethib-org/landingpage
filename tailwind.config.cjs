@@ -5,12 +5,13 @@ module.exports = {
 		extend: {
 			backgroundColor: {
 				'09494C': '#09494C',
-				'EFE6D3': '#EFE6D3'
+				'EFE6D3': '#EFE6D3',
+				'033436': '#033436'
 			},
 			colors: {
 				'09494C': '#09494C',
 				'EFE6D3': '#EFE6D3'
-			},
+			}
 		},
 	},
 	plugins: [],
