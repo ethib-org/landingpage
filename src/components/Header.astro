@@ -2,24 +2,26 @@
 import { Image } from "astro:assets";
 ---
 
-<header class="bg-09494C text-white pt-14 lg:pt-10 z-10 lg:h-screen">
-    <div class="mx-7 sm:mx-0 lg:mx-36 w-330 sm:w-auto flex flex-col items-center relative">
+<header class="bg-09494C text-white pt-14 lg:pt-10 z-10">
+    <div class="mx-7 sm:mx-0 lg:mx-40 sm:w-auto flex flex-col items-center relative">
         <div class="mb-20">
             <Image src="/images/logo.png" alt="logo" width="100" height="100" />
         </div>
-        <div class="text-4xl relative mb-20">
+        <div class="text-3xl lg:text-4xl relative mb-20 lg:mb-0 lg:w-full">
             <!-- <Image src="/images/asset-header.png" alt="Astro" width="17" height="17" class="inline absolute top-0 left-2/3 transform -translate-x-1/2" />
             -->
-            <div class="relative sm:mb-20 md:flex md:justify-between md:items-center">
-                <h2 class="font-normal leading-snug">La différence commence<br class="hidden md:block" /> avec nos marques</h2>
+            <div class="relative sm:mb-20 lg:mb-10 lg:flex lg:flex-row lg:items-center lg:justify-center">
+                <div class="md:flex md:justify-between md:flex-col md:items-center">
+                <h2 class="font-normal leading-snug">La différence<br class="block md:hidden" /> commence<br class="hidden md:block" /> avec nos marques</h2>
                 <div class="text-right md:ml-auto text-09494C">
-                    <span class="inline-flex h-[42.274px] rotate-[-7.482deg] px-2 pb-2 justify-center items-center gap-10 flex-shrink-0 rounded-[204px] bg-[#EFE6D3]">responsables</span>
+                    <span class="inline-flex h-[42.274px] rotate-[-7.482deg] px-6 pb-3 pt-0.5 justify-center items-center gap-10 flex-shrink-0 rounded-[204px] bg-[#EFE6D3] lg:-mr-10">responsables</span>
                 </div>
-<!--                 <Image src="/images/asset-header3.png" alt="Astro" width="431" height="464" class="hidden md:block ml-auto" />
- -->            </div>
+            </div>
+                <Image src="/images/asset-header3.png" alt="Astro" width="431" height="464" class="hidden md:block lg:ml-48" />
+            </div>
         </div>
         <div class="text-center text-2xl mb-16 font-normal">
-            <p>éthib reconnecte<br class="block sm:hidden" /> les consommateurs<br class="block sm:hidden"  /> aux<br class="block sm:hidden"  /> commerçants locaux</p>
+            <p>éthib reconnecte<br class="block md:hidden" /> les consommateurs<br class="hidden md:block" /> aux<br class="block md:hidden"  /> commerçants locaux</p>
         </div>
         <div class="mb-20">
             <a href="#" class="l inline-flex px-6 py-3 justify-center items-center gap-5 rounded-[20px] bg-[#E25959] text-white hover:bg-[#C94343] hover:text-white">
