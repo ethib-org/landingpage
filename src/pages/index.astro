@@ -17,8 +17,26 @@ import Footer from '../components/Footer.astro';
 	</main>
 </Layout>
 
-<!-- 
-<style>
+
+<style is:global>
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/inter-regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'arya';
+  src: url('/fonts/arya-bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'arya', sans-serif;
+}
 
 </style>
- -->
