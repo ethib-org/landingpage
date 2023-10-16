@@ -1,27 +1,35 @@
 ---
-import TitleSection from "./TitleSection.astro";
+import TitleSection from './TitleSection.astro';
+import { Image } from "astro:assets";
 
 ---
 
-
-
 <section class="bg-EFE6D3 pt-8 pb-16">
-    <div class="mx-7 sm:mx-0 lg:mx-40 sm:w-auto">
-        <TitleSection title="Notre idée" url="/images/asset-section4.png" />
-        <div class="flex flex-col justify-evenly">
-            <div class="text-center mb-5 flex flex-col items-start">
-                <h3 class="text-09494C text-lg">Offrir de la visibilité</h3>
-                <p class="text-sm font-normal leading-tight">aux boutiques éthiques<br /> et locales</p>
-            </div>
-            <div class="text-center mb-5 flex flex-col items-end">
-                <h3 class="text-09494C text-lg">Être présent en ligne</h3>
-                <p class="text-sm font-normal leading-tight">sur notre plateforme de<br /> produits éthiques</p>
-            </div>
-            <div class="text-center flex flex-col items-start ml-8">
-                <h3 class="text-09494C text-lg">Augmenter ses<br /> ventes</h3>
-                <p class="text-sm font-normal leading-tight">de vente de produits<br /> éthiques</p>
-            </div>
+  <div class="mx-7 sm:mx-0 lg:mx-40 sm:w-auto">
+    <TitleSection title="Notre idée" url="/images/asset-section4.png" />
+    <div class="lg:flex lg:justify-around lg:w-full">
+      <div class="flex flex-col justify-evenly lg:w-1/3">
+        <div class="text-center mb-5 flex flex-col items-start">
+          <h3 class="text-09494C text-lg lg:text-2xl">Offrir de la visibilité</h3>
+          <p class="text-sm lg:text-lg font-normal leading-tight">
+            aux boutiques éthiques<br /> et locales
+          </p>
         </div>
-    <div/>
-</div>
+        <div class="text-center mb-5 flex flex-col items-end">
+          <h3 class="text-09494C text-lg lg:text-2xl">Être présent en ligne</h3>
+          <p class="text-sm lg:text-lg font-normal leading-tight">
+            sur notre plateforme de<br /> produits éthiques
+          </p>
+        </div>
+        <div class="text-center flex flex-col items-start ml-8">
+          <h3 class="text-09494C text-lg lg:text-2xl">Augmenter ses<br class="block md:hidden" /> ventes</h3>
+          <p class="text-sm lg:text-lg font-normal leading-tight">
+            de vente de produits<br /> éthiques
+          </p>
+        </div>
+      </div>
+      <Image src="/images/asset-section5.png" alt="Astro" width="224" height="351" class="hidden md:block" />
+    </div>
+    <div></div>
+  </div>
 </section>
