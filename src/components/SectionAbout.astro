@@ -1,43 +1,54 @@
 ---
-import { Image } from 'astro:assets';
+import { Image } from "astro:assets";
 
-import TitleSection from './TitleSection.astro';
+import TitleSection from "./TitleSection.astro";
 ---
 
-<section class="rounded-t-3xl -mt-5 lg:mt-0 lg:rounded-none pt-8 pb-14 z-20 bg-white">
-  <div class="mx-7 sm:mx-0 lg:max-w-4xl lg:mx-auto lg:text-center sm:w-auto flex flex-col items-center">
+<section
+  class="rounded-t-3xl -mt-5 md:mt-0 md:rounded-none pt-16 pb-14 z-20 bg-white"
+>
+  <div
+    class="mx-7 sm:mx-0 md:max-w-2xl lg:max-w-4xl md:mx-auto md:text-center sm:w-auto flex flex-col items-center"
+  >
     <TitleSection title="Le point de départ" url="/images/asset-section.png" />
-    <div class="lg:flex lg:flex-row lg:w-full">
-      <div class="flex lg:flex-col-reverse justify-between lg:items-start mb-7 lg:mb-24 w-full sm:justify-between">
+    <div class="flex flex-col md:flex-row md:w-full mb-6 gap-8 md:gap-10">
+      <div
+        class="flex flex-row md:flex-col-reverse items-center gap-6 md:gap-12 w-full md:h-full"
+      >
         <div>
-          <h3 class="mb-1.5 text-09494C text-lg lg:text-2xl">
+          <h3 class="mb-1.5 text-09494C text-lg md:text-2xl">
             Une industrie polluante
           </h3>
-          <p class="text-sm lg:text-lg font-normal leading-tight">
-            L’industrie du textile est la <br class="block sm:hidden" /><span class="font-semibold">seconde<br class="hidden md:block" /> industrie</span> la plus<br class="block sm:hidden" /> polluante au monde.
+          <p class="text-sm md:text-lg font-normal leading-tight">
+            L’industrie du textile est la <br class="block sm:hidden" /><span
+              class="font-semibold"
+              >seconde<br class="hidden md:block" /> industrie</span
+            > la plus<br class="block sm:hidden" /> polluante au monde.
           </p>
         </div>
         <Image
-          src="/images/asset-section2.png"
+          src="/svg/planet-about-section.svg"
           alt="Asset section"
-          class="lg:ml-28 lg:mb-9"
-          height="91"
-          width="90"
+          height="151"
+          width="151"
+          class="w-32 h-32 md:w-[151px] md:h-[151px]"
         />
       </div>
-      <div class="flex lg:flex-col lg:items-end mb-14 w-full justify-between">
+      <div
+        class="flex flex-row md:flex-col items-center gap-6 md:gap-12 w-full"
+      >
         <Image
-          src="/images/asset-section3.png"
+          src="/svg/shop-about-section.svg"
           alt="Asset section"
-          class="lg:mr-24"
-          height="91"
-          width="90"
+          height="151"
+          width="151"
+          class="w-32 h-32 md:w-[151px] md:h-[151px]"
         />
-        <div class="ml-4">
-          <h3 class="mb-1.5 text-09494C text-lg lg:text-2xl">
+        <div class="w-full">
+          <h3 class="mb-1.5 text-09494C text-lg md:text-2xl">
             Boutiques engagées mais<br /> invisibles
           </h3>
-          <p class="text-sm lg:text-lg font-normal leading-tight">
+          <p class="text-sm md:text-lg font-normal leading-tight">
             Les boutiques <span class="font-semibold">responsables</span> et<br
             />
             <span class="font-semibold">éthiques</span> manquent de visibilité.
@@ -46,7 +57,10 @@ import TitleSection from './TitleSection.astro';
       </div>
     </div>
     <div class="">
-      <a href="#" class="l inline-flex px-6 py-3 justify-center items-center gap-5 rounded-[20px] bg-[#E25959] text-white hover:bg-[#C94343] hover:text-white">
+      <a
+        href="#"
+        class="inline-flex px-6 py-3 justify-center items-center gap-5 rounded-full bg-[#E25959] text-white hover:bg-[#C94343] hover:text-white"
+      >
         Suivre notre projet
       </a>
     </div>
