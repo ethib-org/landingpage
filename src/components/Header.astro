@@ -3,31 +3,91 @@ import { Image } from "astro:assets";
 ---
 
 <header class="bg-09494C text-white pt-14 lg:pt-10 z-10">
-    <div class="mx-7 sm:mx-0 lg:max-w-6xl lg:mx-auto sm:w-auto flex flex-col items-center relative">
-        <div class="mb-20">
-            <Image src="/svg/logo.svg" alt="logo" width="143" height="52" />
+  <div
+    class="px-7 sm:px-0 w-full md:w-10/12 lg:w-10/12 2xl:w-6/12 md:mx-auto sm:w-auto flex flex-col items-center"
+  >
+    <Image
+      src="/svg/logo.svg"
+      alt="logo"
+      width="143"
+      height="52"
+      class="mb-20 lg:mb-4"
+    />
+    <div class="text-3xl lg:text-4xl mb-28 xs:mb-20 md:w-full">
+      <div
+        class="sm:mb-20 lg:mb-0 flex md:flex-row md:items-center md:justify-around"
+      >
+        <div
+          class="md:mb-16 md:flex md:justify-between md:flex-col md:items-center"
+        >
+          <h2 class="leading-snug text-4xl sm:text-5xl max-w-xl">
+            La
+            <span class="relative">
+              différence
+              <Image
+                src="/svg/header-difference-showoff.svg"
+                alt="#"
+                width="20"
+                height="20"
+                class="absolute top-2.5 sm:top-5 left-[148px] sm:left-[200px]"
+              />
+              <br class="block xs:hidden" />
+            </span>
+            <span class="relative">
+              commence
+              <Image
+                src="/svg/header-start-line.svg"
+                alt="#"
+                width="156"
+                height="3"
+                class="absolute bottom-1 sm:bottom-2 left-1 right-0 w-11/12 z-10"
+              />
+            </span>
+             avec nos <br class="block xs:hidden" />
+            <span class="relative"
+              >marques
+              <div
+                class="absolute left-2/3 xs:left-1/3 top-2/3 xs:top-[80%] -bottom-10 lg:right-4 inline-flex rotate-[-7.482deg] h-10 lg:h-16 w-[225px] lg:w-[325px] justify-center items-center rounded-full bg-[#EFE6D3] lg:-mr-10"
+              >
+                <p
+                  class="font-bold font-aria sm:text-4xl lg:text-5xl text-09494C px-6"
+                >
+                  responsables
+                </p>
+              </div>
+            </span>
+          </h2>
         </div>
-        <div class="text-3xl lg:text-4xl relative mb-20 lg:mb-0 lg:w-full">
-            <!-- <Image src="/images/asset-header.png" alt="Astro" width="17" height="17" class="inline absolute top-0 left-2/3 transform -translate-x-1/2" />
-            -->
-            <div class="relative sm:mb-20 lg:mb-10 lg:flex lg:flex-row lg:items-center lg:justify-between lg:text-5xlx   ">
-                <div class="md:flex md:justify-between md:flex-col md:items-center">
-                <h2 class="leading-snug">La différence <br class="block md:hidden" /> <span>commence<!-- <Image src="/images/asset-header4.png" alt="#" width="156" height="3" class="" /> --></span><br class="hidden md:block" /> avec nos marques</h2>
-                <div class="text-right md:ml-auto text-09494C">
-                    <span class="inline-flex h-[42.274px] rotate-[-7.482deg] px-6 pb-3 pt-0.5 justify-center items-center gap-10 flex-shrink-0 rounded-[204px] bg-[#EFE6D3] lg:-mr-10">responsables</span>
-                </div>
-            </div>
-                <Image src="/images/asset-header3.png" alt="Astro" width="431" height="464" class="hidden md:block lg:ml-48" />
-            </div>
-        </div>
-        <div class="text-center text-2xl lg:text-3xl mb-16 font-normal">
-            <p>éthib reconnecte<br class="block md:hidden" /> les consommateurs<br class="hidden md:block" /> aux<br class="block md:hidden"  /> commerçants locaux</p>
-        </div>
-        <div class="mb-20">
-            <a href="#" class="inline-flex px-6 py-3 justify-center items-center gap-5 rounded-full bg-[#E25959] text-white hover:bg-[#C94343] hover:text-white">
-                Découvrir éthib
-                <Image src="/images/asset-header2.png" alt="Astro" width="7.2" height="8.7" class="-ml-3" />
-            </a>
-        </div>
+        <Image
+          src="/images/ethib-shopping-app.png"
+          alt="Astro"
+          width="431"
+          height="464"
+          class="hidden lg:block w-4/12 max-w-xl"
+        />
+      </div>
     </div>
+    <div class="text-center text-[22px] lg:text-3xl mb-16 font-normal">
+      <p>
+        éthib reconnecte<br class="block md:hidden" /> les consommateurs<br
+          class="hidden md:block"
+        /> aux<br class="block md:hidden" /> commerçants locaux
+      </p>
+    </div>
+    <div class="mb-20">
+      <a
+        href="#"
+        class="inline-flex px-6 py-3 justify-center items-center gap-5 rounded-full bg-[#E25959] text-white hover:bg-[#C94343] hover:text-white"
+      >
+        Découvrir éthib
+        <Image
+          src="/images/asset-header2.png"
+          alt="Astro"
+          width="7.2"
+          height="8.7"
+          class="-ml-3"
+        />
+      </a>
+    </div>
+  </div>
 </header>
