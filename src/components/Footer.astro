@@ -1,12 +1,14 @@
 ---
-import { Image } from "astro:assets";
-import SeeMoreArrow from "./Footer/SeeMoreArrow.astro";
+import { Image } from "astro:assets"
+import SeeMoreArrow from "./Footer/SeeMoreArrow.astro"
 ---
 
 <footer class="bg-033436 pt-5 lg:pt-8 pb-8 lg:pb-10 w-full">
   <div class="text-white text-center w-fit mx-auto relative">
     <h3 class="mb-5">Suivez nous sur les réseaux</h3>
-    <SeeMoreArrow className="absolute -right-12 top-0 lg:-right-20 lg:-top-5 h-12" />
+    <SeeMoreArrow
+      className="absolute -right-12 top-0 lg:-right-20 lg:-top-5 h-12"
+    />
     <div class="flex flex-row justify-center gap-6">
       <a href="https://www.instagram.com/" target="_blank">
         <Image
