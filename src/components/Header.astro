@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import StartLine from "./Header/StartLine.astro";
 import ButtonArrow from "./Header/ButtonArrow.astro";
+import SeeMoreArrow from "./Header/SeeMoreArrow.astro";
 ---
 
 <header class="bg-09494C text-white pt-14 lg:pt-10 z-10">
@@ -63,14 +64,15 @@ import ButtonArrow from "./Header/ButtonArrow.astro";
         />
       </div>
     </div>
-    <div class="text-center text-[22px] lg:text-3xl mb-16 font-normal">
+    <div class="text-center text-[22px] lg:text-3xl mb-16 font-normal relative">
+      <SeeMoreArrow className="block md:hidden absolute -right-20 -top-10 w-28" />
       <p>
         éthib reconnecte<br class="block md:hidden" /> les consommateurs<br
           class="hidden md:block"
         /> aux<br class="block md:hidden" /> commerçants locaux
       </p>
     </div>
-    <div class="mb-20">
+    <div class="mb-20 relative">
       <a
         href="#"
         class="inline-flex px-6 py-3 justify-center items-center gap-5 rounded-full bg-[#E25959] text-white hover:bg-[#C94343] hover:text-white"
@@ -78,6 +80,7 @@ import ButtonArrow from "./Header/ButtonArrow.astro";
         Découvrir éthib
         <ButtonArrow />
       </a>
+      <SeeMoreArrow className="hidden md:block absolute -right-48 top-0 w-28" />
     </div>
   </div>
 </header>
