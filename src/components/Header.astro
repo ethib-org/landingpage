@@ -1,5 +1,7 @@
 ---
 import { Image } from "astro:assets";
+import StartLine from "./Header/StartLine.astro";
+import ButtonArrow from "./Header/ButtonArrow.astro";
 ---
 
 <header class="bg-09494C text-white pt-14 lg:pt-10 z-10">
@@ -35,13 +37,7 @@ import { Image } from "astro:assets";
             </span>
             <span class="relative">
               commence
-              <Image
-                src="/svg/header-start-line.svg"
-                alt="#"
-                width="156"
-                height="3"
-                class="absolute bottom-1 sm:bottom-2 left-1 right-0 w-11/12 z-10"
-              />
+              <StartLine />
             </span>
              avec nos <br class="block xs:hidden" />
             <span class="relative"
@@ -80,13 +76,7 @@ import { Image } from "astro:assets";
         class="inline-flex px-6 py-3 justify-center items-center gap-5 rounded-full bg-[#E25959] text-white hover:bg-[#C94343] hover:text-white"
       >
         Découvrir éthib
-        <Image
-          src="/images/asset-header2.png"
-          alt="Astro"
-          width="7.2"
-          height="8.7"
-          class="-ml-3"
-        />
+        <ButtonArrow />
       </a>
     </div>
   </div>

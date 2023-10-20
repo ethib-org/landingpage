@@ -1,0 +1,46 @@
+---
+
+---
+
+<svg
+width="7.2"
+height="8.7"
+  viewBox="0 0 11 12"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  class="button-arrow-animation -ml-3"
+  width="7.2"
+  height="8.7"
+>
+  <path
+    d="M1 6.83331L5.16667 11L9.33333 6.83331"
+    stroke="white"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"></path>
+  <path
+    d="M1 1L5.16667 5.16667L9.33333 1"
+    stroke="white"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"></path>
+</svg>
+
+<style>
+  .button-arrow-animation {
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-name: bounceButtonArrow;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes bounceButtonArrow {
+    from {
+      transform: translateY(-20%);
+    }
+    to {
+      transform: translateY(20%);
+    }
+  }
+</style>
