@@ -5,25 +5,24 @@ import TitleSection from "./TitleSection.astro";
 ---
 
 <section
-  class="rounded-t-3xl -mt-5 md:mt-0 md:rounded-none pt-16 pb-14 z-20 bg-white"
+  class="rounded-t-3xl -mt-5 md:mt-0 md:rounded-none pt-8 md:pt-16 pb-14 md:pb-24 z-20 bg-white"
 >
   <div
     class="mx-7 sm:mx-0 md:max-w-2xl lg:max-w-4xl md:mx-auto md:text-center sm:w-auto flex flex-col items-center"
   >
     <TitleSection title="Le point de départ" url="/images/asset-section.png" />
-    <div class="flex flex-col md:flex-row md:w-full mb-6 gap-8 md:gap-10">
+    <div class="flex flex-col md:flex-row w-full xs:w-4/5 md:w-full gap-8 md:gap-10">
       <div
         class="flex flex-row md:flex-col-reverse items-center gap-6 md:gap-12 w-full md:h-full"
       >
-        <div>
+        <div class="flex flex-col w-full">
           <h3 class="mb-1.5 text-09494C text-lg md:text-2xl">
             Une industrie polluante
           </h3>
           <p class="text-sm md:text-lg font-normal leading-tight">
-            L’industrie du textile est la <br class="block sm:hidden" /><span
-              class="font-semibold"
-              >seconde<br class="hidden md:block" /> industrie</span
-            > la plus<br class="block sm:hidden" /> polluante au monde.
+            L'industrie du textile est la<span class="font-semibold"
+              >seconde industrie</span
+            > la plus polluante au monde.
           </p>
         </div>
         <Image
@@ -31,7 +30,7 @@ import TitleSection from "./TitleSection.astro";
           alt="Asset section"
           height="151"
           width="151"
-          class="w-32 h-32 md:w-[151px] md:h-[151px]"
+          class="w-24 h-24 md:w-[151px] md:h-[151px]"
         />
       </div>
       <div
@@ -42,21 +41,20 @@ import TitleSection from "./TitleSection.astro";
           alt="Asset section"
           height="151"
           width="151"
-          class="w-32 h-32 md:w-[151px] md:h-[151px]"
+          class="w-20 h-20 md:w-[151px] md:h-[151px]"
         />
         <div class="w-full">
           <h3 class="mb-1.5 text-09494C text-lg md:text-2xl">
-            Boutiques engagées mais<br /> invisibles
+            Boutiques engagées mais invisibles
           </h3>
           <p class="text-sm md:text-lg font-normal leading-tight">
-            Les boutiques <span class="font-semibold">responsables</span> et<br
-            />
+            Les boutiques <span class="font-semibold">responsables</span> et
             <span class="font-semibold">éthiques</span> manquent de visibilité.
           </p>
         </div>
       </div>
     </div>
-    <div class="">
+    <div class="mt-8 md:hidden">
       <a
         href="#"
         class="inline-flex px-6 py-3 justify-center items-center gap-5 rounded-full bg-[#E25959] text-white hover:bg-[#C94343] hover:text-white"
