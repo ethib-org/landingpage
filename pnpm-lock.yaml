@@ -1,9 +1,5 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 dependencies:
   '@astrojs/tailwind':
     specifier: ^5.0.0
@@ -16,6 +12,9 @@ dependencies:
     version: 3.3.3
 
 devDependencies:
+  prettier:
+    specifier: latest
+    version: 3.0.3
   prettier-plugin-astro:
     specifier: ^0.12.0
     version: 0.12.0
@@ -3785,3 +3784,7 @@ packages:
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: false
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
