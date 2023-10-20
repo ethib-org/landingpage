@@ -1,34 +1,69 @@
 ---
-import TitleSection from './TitleSection.astro';
+import TitleSection from "./TitleSection.astro";
 import { Image } from "astro:assets";
-
 ---
 
-<section class="bg-EFE6D3 pt-16 pb-32">
-  <div class="mx-7 sm:mx-0 lg:max-w-4xl lg:mx-auto sm:w-auto">
+<section class="bg-EFE6D3 pt-8 md:pt-16 pb-16 md:pb-24">
+  <div class="mx-7 sm:mx-auto sm:max-w-4xl sm:w-auto">
     <TitleSection title="Notre idée" url="/images/asset-section4.png" />
-    <div class="lg:flex lg:justify-between lg:w-full">
-      <div class="flex flex-col justify-evenly lg:w-5/12">
-        <div class="text-center mb-5 flex flex-col items-start">
-          <h3 class="text-09494C text-lg lg:text-2xl">Offrir de la visibilité</h3>
-          <p class="text-sm lg:text-lg font-normal leading-tight">
-            aux boutiques éthiques<br /> et locales
-          </p>
+    <div class="flex justify-center md:justify-evenly w-full">
+      <div class="flex flex-col md:w-6/12">
+        <div class="flex flex-row mb-5">
+          <div class="w-1/2 text-center flex flex-col items-start">
+            <h3 class="text-09494C text-lg md:text-2xl mx-auto">
+              Offrir de la visibilité
+            </h3>
+            <p class="text-sm md:text-lg font-normal leading-tight">
+              aux boutiques éthiques et locales
+            </p>
+          </div>
+          <div class="w-1/2 flex justify-start">
+            <Image
+              src="/svg/arrow-1-idea-section.svg"
+              alt="Flèche vers l'idée suivante"
+              width="84"
+              height="31"
+              class="transform translate-y-4 translate-x-2"
+            />
+          </div>
         </div>
-        <div class="text-center mb-5 flex flex-col items-end">
-          <h3 class="text-09494C text-lg lg:text-2xl">Être présent en ligne</h3>
-          <p class="text-sm lg:text-lg font-normal leading-tight">
-            sur notre plateforme de<br /> produits éthiques
-          </p>
+        <div class="flex flex-row mb-8">
+          <div class="w-1/2 flex justify-end">
+            <Image
+              src="/svg/arrow-2-idea-section.svg"
+              alt="Flèche vers l'idée suivante"
+              width="50"
+              height="20"
+              class="transform translate-y-8 -translate-x-4"
+            />
+          </div>
+          <div class="w-1/2 text-center flex flex-col items-end">
+            <h3 class="text-09494C text-lg md:text-2xl mx-auto">
+              Être présent en ligne
+            </h3>
+            <p class="text-sm md:text-lg font-normal leading-tight">
+              sur notre plateforme de produits éthiques
+            </p>
+          </div>
         </div>
-        <div class="text-center flex flex-col items-start ml-8">
-          <h3 class="text-09494C text-lg lg:text-2xl">Augmenter ses<br class="block md:hidden" /> ventes</h3>
-          <p class="text-sm lg:text-lg font-normal leading-tight">
-            de vente de produits<br /> éthiques
+        <div class="w-8/12 text-center flex flex-col items-center">
+          <h3 class="text-09494C text-lg leading-6 md:text-2xl">
+            Augmenter ses<br class="block md:hidden" /> ventes
+          </h3>
+          <p class="text-sm md:text-lg font-normal leading-tight w-10/12">
+            de vente de produits éthiques
           </p>
         </div>
       </div>
-      <Image src="/images/asset-section5.png" alt="Astro" width="224" height="351" class="hidden md:block" />
+      <div>
+        <Image
+          src="/images/asset-section5.png"
+          alt="Astro"
+          width="224"
+          height="351"
+          class="hidden md:inline-block"
+        />
+      </div>
     </div>
     <div></div>
   </div>
