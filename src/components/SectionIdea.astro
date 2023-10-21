@@ -3,54 +3,54 @@ import TitleSection from "./TitleSection.astro"
 import { Image } from "astro:assets"
 ---
 
-<section class="bg-EFE6D3 pt-8 md:pt-16 pb-16 md:pb-24">
-  <div class="mx-7 sm:mx-auto sm:max-w-4xl md:max-w-6xl sm:w-auto">
+<section class="bg-EFE6D3 pb-16 pt-8 md:pb-24 md:pt-16">
+  <div class="mx-7 sm:mx-auto sm:w-auto sm:max-w-4xl md:max-w-6xl">
     <TitleSection title="Notre idée" url="/images/asset-section4.png" />
-    <div class="flex justify-center md:justify-evenly lg:justify-around w-full">
+    <div class="flex w-full justify-center md:justify-evenly lg:justify-around">
       <div class="flex flex-col md:w-6/12 lg:-translate-x-8">
-        <div class="flex flex-row mb-5">
-          <div class="w-1/2 text-center flex flex-col items-start">
-            <h3 class="text-09494C text-lg md:text-2xl mx-auto">
+        <div class="mb-5 flex flex-row">
+          <div class="flex w-1/2 flex-col items-start text-center">
+            <h3 class="mx-auto text-lg text-09494C md:text-2xl">
               Offrir de la visibilité
             </h3>
-            <p class="text-sm md:text-lg font-normal leading-tight">
+            <p class="text-sm font-normal leading-tight md:text-lg">
               aux boutiques éthiques et locales
             </p>
           </div>
-          <div class="w-1/2 flex justify-start">
+          <div class="flex w-1/2 justify-start">
             <Image
               src="/svg/arrow-1-idea-section.svg"
               alt="Flèche vers l'idée suivante"
               width="84"
               height="31"
-              class="transform translate-y-4 translate-x-2"
+              class="translate-x-2 translate-y-4 transform"
             />
           </div>
         </div>
-        <div class="flex flex-row mb-8">
-          <div class="w-1/2 flex justify-end">
+        <div class="mb-8 flex flex-row">
+          <div class="flex w-1/2 justify-end">
             <Image
               src="/svg/arrow-2-idea-section.svg"
               alt="Flèche vers l'idée suivante"
               width="50"
               height="20"
-              class="transform translate-y-8 -translate-x-4"
+              class="-translate-x-4 translate-y-8 transform"
             />
           </div>
-          <div class="w-1/2 text-center flex flex-col items-end">
-            <h3 class="text-09494C text-lg md:text-2xl mx-auto">
+          <div class="flex w-1/2 flex-col items-end text-center">
+            <h3 class="mx-auto text-lg text-09494C md:text-2xl">
               Être présent en ligne
             </h3>
-            <p class="text-sm md:text-lg font-normal leading-tight">
+            <p class="text-sm font-normal leading-tight md:text-lg">
               sur notre plateforme de produits éthiques
             </p>
           </div>
         </div>
-        <div class="w-8/12 text-center flex flex-col items-center">
-          <h3 class="text-09494C text-lg leading-6 md:text-2xl">
+        <div class="flex w-8/12 flex-col items-center text-center">
+          <h3 class="text-lg leading-6 text-09494C md:text-2xl">
             Augmenter ses<br class="block md:hidden" /> ventes
           </h3>
-          <p class="text-sm md:text-lg font-normal leading-tight w-10/12">
+          <p class="w-10/12 text-sm font-normal leading-tight md:text-lg">
             de vente de produits éthiques
           </p>
         </div>

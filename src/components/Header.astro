@@ -5,9 +5,9 @@ import ButtonArrow from "./Header/ButtonArrow.astro"
 import SeeMoreArrow from "./Header/SeeMoreArrow.astro"
 ---
 
-<header class="bg-09494C text-white pt-14 lg:pt-10 z-10">
+<header class="z-10 bg-09494C pt-14 text-white lg:pt-10">
   <div
-    class="px-7 sm:px-0 w-full md:w-10/12 lg:w-10/12 2xl:w-6/12 md:mx-auto sm:w-auto flex flex-col items-center"
+    class="flex w-full flex-col items-center px-7 sm:w-auto sm:px-0 md:mx-auto md:w-10/12 lg:w-10/12 2xl:w-6/12"
   >
     <Image
       src="/svg/logo.svg"
@@ -16,14 +16,14 @@ import SeeMoreArrow from "./Header/SeeMoreArrow.astro"
       height="52"
       class="mb-20 lg:mb-4"
     />
-    <div class="text-3xl lg:text-4xl mb-28 xs:mb-20 md:w-full">
+    <div class="mb-28 text-3xl xs:mb-20 md:w-full lg:text-4xl">
       <div
-        class="sm:mb-20 lg:mb-0 flex md:flex-row md:items-center md:justify-around"
+        class="flex sm:mb-20 md:flex-row md:items-center md:justify-around lg:mb-0"
       >
         <div
-          class="md:mb-16 md:flex md:justify-between md:flex-col md:items-center"
+          class="md:mb-16 md:flex md:flex-col md:items-center md:justify-between"
         >
-          <h2 class="leading-snug text-4xl sm:text-5xl max-w-xl">
+          <h2 class="max-w-xl text-4xl leading-snug sm:text-5xl">
             La
             <span class="relative">
               différence
@@ -32,7 +32,7 @@ import SeeMoreArrow from "./Header/SeeMoreArrow.astro"
                 alt="#"
                 width="20"
                 height="20"
-                class="absolute top-2.5 sm:top-5 left-[148px] sm:left-[200px]"
+                class="absolute left-[148px] top-2.5 sm:left-[200px] sm:top-5"
               />
               <br class="block xs:hidden" />
             </span>
@@ -44,10 +44,10 @@ import SeeMoreArrow from "./Header/SeeMoreArrow.astro"
             <span class="relative"
               >marques
               <div
-                class="absolute left-2/3 xs:left-1/3 top-2/3 xs:top-[80%] -bottom-10 lg:right-4 inline-flex rotate-[-7.482deg] h-10 lg:h-16 w-[225px] lg:w-[325px] justify-center items-center rounded-full bg-[#EFE6D3] lg:-mr-10"
+                class="absolute -bottom-10 left-2/3 top-2/3 inline-flex h-10 w-[225px] rotate-[-7.482deg] items-center justify-center rounded-full bg-[#EFE6D3] xs:left-1/3 xs:top-[80%] lg:right-4 lg:-mr-10 lg:h-16 lg:w-[325px]"
               >
                 <p
-                  class="font-bold font-aria sm:text-4xl lg:text-5xl text-09494C px-6"
+                  class="font-aria px-6 font-bold text-09494C sm:text-4xl lg:text-5xl"
                 >
                   responsables
                 </p>
@@ -60,13 +60,13 @@ import SeeMoreArrow from "./Header/SeeMoreArrow.astro"
           alt="Astro"
           width="431"
           height="464"
-          class="hidden lg:block w-4/12 max-w-xl"
+          class="hidden w-4/12 max-w-xl lg:block"
         />
       </div>
     </div>
-    <div class="text-center text-[22px] lg:text-3xl mb-16 font-normal relative">
+    <div class="relative mb-16 text-center text-[22px] font-normal lg:text-3xl">
       <SeeMoreArrow
-        className="block md:hidden absolute -right-20 -top-10 w-28"
+        className="absolute -right-20 -top-10 block w-28 md:hidden"
       />
       <p>
         éthib reconnecte<br class="block md:hidden" /> les consommateurs<br
@@ -74,15 +74,15 @@ import SeeMoreArrow from "./Header/SeeMoreArrow.astro"
         /> aux<br class="block md:hidden" /> commerçants locaux
       </p>
     </div>
-    <div class="mb-20 relative">
+    <div class="relative mb-20">
       <a
         href="#"
-        class="inline-flex px-6 py-3 justify-center items-center gap-5 rounded-full bg-[#E25959] text-white hover:bg-[#C94343] hover:text-white"
+        class="inline-flex items-center justify-center gap-5 rounded-full bg-[#E25959] px-6 py-3 text-white hover:bg-[#C94343] hover:text-white"
       >
         Découvrir éthib
         <ButtonArrow />
       </a>
-      <SeeMoreArrow className="hidden md:block absolute -right-48 top-0 w-28" />
+      <SeeMoreArrow className="absolute -right-48 top-0 hidden w-28 md:block" />
     </div>
   </div>
 </header>
