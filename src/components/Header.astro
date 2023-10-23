@@ -5,18 +5,14 @@ import ButtonArrow from "./Header/ButtonArrow.astro"
 import SeeMoreArrow from "./Header/SeeMoreArrow.astro"
 ---
 
-<header class="z-10 bg-09494C pt-14 text-white lg:pt-10">
+<header
+  class="z-10 flex h-[100dvh] items-center justify-center bg-09494C text-white"
+>
   <div
-    class="flex w-full flex-col items-center px-7 sm:w-auto sm:px-0 md:mx-auto md:w-10/12 lg:w-10/12 2xl:w-9/12"
+    class="flex h-full w-full flex-col items-center justify-evenly px-7 sm:w-auto sm:px-0 md:mx-auto md:w-10/12 lg:w-10/12 2xl:w-9/12"
   >
-    <Image
-      src="/svg/logo.svg"
-      alt="logo"
-      width="143"
-      height="52"
-      class="mb-20 lg:mb-4"
-    />
-    <div class="mb-28 text-3xl xs:mb-20 md:w-full lg:text-4xl">
+    <Image src="/svg/logo.svg" alt="logo" width="143" height="52" class="" />
+    <div class="text-3xl md:w-full lg:text-4xl">
       <div
         class="flex sm:mb-20 md:flex-row md:items-center md:justify-around lg:mb-0"
       >
@@ -60,11 +56,11 @@ import SeeMoreArrow from "./Header/SeeMoreArrow.astro"
           alt="Astro"
           width="431"
           height="464"
-          class="hidden w-4/12 max-w-xl lg:block"
+          class="hidden w-4/12 max-w-xl lg:block 2xl:max-w-lg"
         />
       </div>
     </div>
-    <div class="relative mb-16 text-center text-[22px] font-normal lg:text-3xl">
+    <div class="relative text-center text-[22px] font-normal lg:text-3xl">
       <SeeMoreArrow
         className="absolute -right-20 -top-10 block w-28 md:hidden"
       />
@@ -74,7 +70,7 @@ import SeeMoreArrow from "./Header/SeeMoreArrow.astro"
         /> aux<br class="block md:hidden" /> commerçants locaux
       </p>
     </div>
-    <div class="relative mb-20">
+    <div class="relative">
       <a
         href="#"
         class="inline-flex items-center justify-center gap-5 rounded-full bg-[#E25959] px-6 py-3 text-white hover:bg-[#C94343] hover:text-white"
