@@ -7,6 +7,6 @@ const { title, url } = Astro.props
 <div
   class="mb-12 flex flex-col items-center text-2xl font-semibold leading-tight text-09494C lg:text-3xl"
 >
-  <Image src={url} alt="icon" width="26" height="29" />
+  <Image src={url} alt="icon" width="26" height="29" loading="lazy" />
   <h2>{title}</h2>
 </div>

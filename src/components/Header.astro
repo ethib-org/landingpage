@@ -11,7 +11,13 @@ import SeeMoreArrow from "./Header/SeeMoreArrow.astro"
   <div
     class="flex h-full w-full flex-col items-center justify-evenly px-7 sm:w-auto sm:px-0 md:mx-auto md:w-10/12 lg:w-10/12 2xl:w-9/12"
   >
-    <Image src="/svg/logo.svg" alt="logo" width="143" height="52" class="" />
+    <Image
+      src="/svg/logo.svg"
+      alt="logo"
+      width="143"
+      height="52"
+      loading="lazy"
+    />
     <div class="text-3xl md:w-full lg:text-4xl">
       <div
         class="flex sm:mb-20 md:flex-row md:items-center md:justify-around lg:mb-0"
@@ -25,10 +31,11 @@ import SeeMoreArrow from "./Header/SeeMoreArrow.astro"
               différence
               <Image
                 src="/svg/header-difference-showoff.svg"
-                alt="#"
+                alt="showoff"
                 width="20"
                 height="20"
                 class="absolute left-[148px] top-2.5 sm:left-[200px] sm:top-5"
+                loading="lazy"
               />
               <br class="block xs:hidden" />
             </span>
@@ -53,10 +60,11 @@ import SeeMoreArrow from "./Header/SeeMoreArrow.astro"
         </div>
         <Image
           src="/images/ethib-shopping-app.png"
-          alt="Astro"
+          alt="ethib shopping app"
           width="431"
           height="464"
           class="hidden w-4/12 max-w-xl lg:block 2xl:max-w-lg"
+          loading="lazy"
         />
       </div>
     </div>
